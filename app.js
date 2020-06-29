@@ -33,6 +33,7 @@ guessBtn.addEventListener('click', function () {
 
     //Check if won
     if (guess === winningNum) {
+        //Game over / Won
         //Disable input if true
         guessInput.disabled = true;
         //Change border to green if true
@@ -40,7 +41,25 @@ guessBtn.addEventListener('click', function () {
         //Set Message
         setMessage(`${winningNum} is correct, YOU WIN!`, 'green');
     } else {
+        //Wrong Number
+        guessesLeft -= 1;
+        if (guessesLeft === 0) {
+            //Game over / Lost
+            //Disable input if true
+            guessInput.disabled = true;
+            //Change border to green if true
+            guessInput.style.borderColor = 'red';
+            //Set Message
+            setMessage(`Game Over Man, Game Over! (Bill Paxton)`, 'red');
+        } else {
+            //Game continues / Answer wrong
+            //Change border color
+            //Change border to green if true
+            guessInput.style.borderColor = 'red';
+            //Tell user its the wrong number
+            setMessage(`${guess} is not correct, ${guessesLeft} guesses left... `, 'red');
 
+        }
     }
 
 });
