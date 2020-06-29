@@ -2,6 +2,7 @@
 Number Guesser is a Vanilla Javascript demonstration. Guess a number between 1 and 10. Javascript code is commented for build process. It utilizes the MATH object to play a number game with the user. 
 
 ## Deployed
+https://cooperpear.github.io/Number-Guesser/
 
 ## Built With
 Vanilla Javascript<br>
