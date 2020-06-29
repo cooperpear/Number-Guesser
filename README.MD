@@ -15,7 +15,7 @@ Styling
 Cooper Pearson
 
 ## Screenshots
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+![Home](https://github.com/cooperpear/Number-Guesser/blob/master/Number-Guesser.png?raw=true "Home")
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
