@@ -7,7 +7,7 @@
 // Game values
 let min = 1,
     max = 10,
-    winningNum = 2,
+    winningNum = getRandomNum(),
     guessesLeft = 3;
 
 //UI Elements
@@ -49,7 +49,7 @@ guessBtn.addEventListener('click', function () {
         guessesLeft -= 1;
         if (guessesLeft === 0) {
             //Game over / Lost
-            gameOver(false, `Game Over Man, Game Over! (Bill Paxton)`);
+            gameOver(false, `Game Over Man, Game Over! (Bill Paxton) ${winningNum} was winning number`);
 
 
         } else {
@@ -85,6 +85,11 @@ function gameOver(won, msg) {
     //Play Again?
     guessBtn.value = 'Play Again';
     guessBtn.className += 'play-again';
+}
+
+//Get Winning Number
+function getRandomNum() {
+    return Math.floor((Math.random() * (max - min + 1) + min));
 }
 
 //Create setMessage function
