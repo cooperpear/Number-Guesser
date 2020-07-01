@@ -97,3 +97,5 @@ function setMessage(msg, color) {
     message.style.color = color;
     message.textContent = msg;
 }
+
+//End
