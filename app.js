@@ -2,7 +2,7 @@
 // -Player must guess a number between min and max
 // -Player gets a certain amount of guesses
 // -Notify player of guesses remaining
-// -Let player choose to play again
+// -Let player choose to play again.
 
 // Game values
 let min = 1,
